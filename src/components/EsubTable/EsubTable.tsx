@@ -11,14 +11,16 @@ export const EsubTable = ({
       <thead></thead>
       <tbody>
         <tr>
-          <th></th>
-          <th></th>
+          <th>Underground line</th>
+          <th>Line status</th>
         </tr>
         <tr>
           <td
             className={`esub-table-lineColor esub-table-lineColor--${lineColor}`}
           ></td>
-          <td className="esub-table-linename">{lineName}</td>
+          <td className="esub-table-linename" aria-label={`${lineName} line`}>
+            {lineName}
+          </td>
           <td className="esub-table-linestatus">{lineStatus}</td>
         </tr>
       </tbody>

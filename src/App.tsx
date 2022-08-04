@@ -16,26 +16,23 @@ function App() {
         <Row className="esub-page-row">
           <Col sm={12} md={12} lg={12}>
             <Row className="esub-table-row">
-              <Col>
-                {Object.values(linesData).map(
-                  (line: {
-                    id: string;
-                    name: string;
-                    lineStatuses: [{ statusSeverityDescription: string }];
-                  }) => (
-                    <div key={line.id}>
-                      <EsubTable
-                        lineColor={getLineColor(line.id)}
-                        lineName={line.name}
-                        lineStatus={
-                          line.lineStatuses[0].statusSeverityDescription
-                        }
-                      />
-                    </div>
-                  )
-                )}
-              </Col>
-              <Col md={4} lg={4}></Col>
+              {Object.values(linesData).map(
+                (line: {
+                  id: string;
+                  name: string;
+                  lineStatuses: [{ statusSeverityDescription: string }];
+                }) => (
+                  <div key={line.id}>
+                    <EsubTable
+                      lineColor={getLineColor(line.id)}
+                      lineName={line.name}
+                      lineStatus={
+                        line.lineStatuses[0].statusSeverityDescription
+                      }
+                    />
+                  </div>
+                )
+              )}
             </Row>
           </Col>
         </Row>
