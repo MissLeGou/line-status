@@ -1,0 +1,56 @@
+table {
+  break-inside: avoid;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+td {
+  border: 1px solid black;
+  width: 100%;
+}
+th {
+  display: none;
+}
+
+.esub-table-linestatus {
+  font-weight: bold;
+  min-width: 100px;
+  padding: 10px;
+}
+
+td.esub-table-lineColor {
+  width: 3%;
+  &--piccadilly {
+    background-color: #0019a8;
+  }
+  &--circle {
+    background-color: #ffc80a;
+  }
+  &--hammersmith-city {
+    background-color: #f589a6;
+  }
+  &--bakerloo {
+    background-color: #b26300;
+  }
+  &--jubilee {
+    background-color: #838d93;
+  }
+  &--victoria {
+    background-color: #039be5;
+  }
+  &--district {
+    background-color: #007d32;
+  }
+  &--central {
+    background-color: #dc241f;
+  }
+  &--metropolitan {
+    background-color: #9b0058;
+  }
+  &--waterloo-city {
+    background-color: #76d0bd;
+  }
+  &--northern {
+    background-color: #000000;
+  }
+}
