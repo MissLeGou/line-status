@@ -1,7 +1,13 @@
 import { render, screen } from "@testing-library/react";
+import ReactTestRenderer from "react-test-renderer";
 import App from "./App";
 
 describe("When app starts up", () => {
+  it("renders correctly", () => {
+    const renderer = ReactTestRenderer.create(<App />).toJSON();
+    expect(renderer).toMatchSnapshot();
+  });
+
   it("renders the App", async () => {
     render(<App />);
 
@@ -10,9 +16,8 @@ describe("When app starts up", () => {
 
   it("fetches and displays line status data", async () => {
     render(<App />);
-    const text = await screen.findByText("Bakerloo");
-    expect(text).toBeInTheDocument();
-    // eslint-disable-next-line testing-library/no-debugging-utils
-    screen.debug();
+
+    const lineData = await screen.findByText("Bakerloo");
+    expect(lineData).toBeInTheDocument();
   });
 });

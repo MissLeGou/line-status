@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`When app starts up renders correctly 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="mt-5 mb-3 esub-page container"
+  >
+    <div
+      className="mb-3 esub-page-header row"
+    >
+      <h1>
+        Line Status Board
+      </h1>
+    </div>
+    <div
+      className="esub-page-row row"
+    >
+      <div
+        className="col-lg-12 col-md-12 col-sm-4"
+      >
+        <div
+          className="esub-table-row row"
+        >
+          <div
+            className="col"
+          />
+          <div
+            className="col-lg-4 col-md-4"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
