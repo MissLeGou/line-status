@@ -14,7 +14,7 @@ function App() {
           <h1>Line Status Board</h1>
         </Row>
         <Row className="esub-page-row">
-          <Col sm={4} md={12} lg={12}>
+          <Col sm={12} md={12} lg={12}>
             <Row className="esub-table-row">
               <Col>
                 {Object.values(linesData).map(
