@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 It fetches data from the TfL unified api https://api.tfl.gov.uk/Line/Mode/tube/Status?detail=true and displays Tube line statuses.
 
-This application has a fully responsive design and can display on Desktop, Tablet and Mobile devices.
+This application has a fully responsive design using Bootstrap grid and can display on Desktop, Tablet and Mobile devices.
 
 ## Prior to running the application Set up a .env file
 
